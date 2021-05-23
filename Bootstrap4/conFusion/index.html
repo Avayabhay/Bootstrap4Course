@@ -35,12 +35,55 @@
                      <li class="nav-item"><a href="contactus.html" class="nav-link"><i class="fa fa-envelope fa-lg"></i>
                              Contact</a></li>
                  </ul>
+                 <span class="navbar-text">
+                     <a href="" data-toggle="modal" data-target="#login"><span class="fa fa-sign-in"></span>
+                         Login</a>
+                 </span>
              </div>
 
          </div>
      </nav>
-     <div class="modal">
-         <button class="btn btn-primary">Login</button>
+
+     <div class="modal fade" id="login" tabindex="-1">
+         <div class="modal-dialog modal-lg">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h4 class="modal-title">
+                         Login
+                     </h4>
+                     <button type="button" class="close" data-dismiss="modal">
+                         &times;
+                     </button>
+                 </div>
+                 <div class="modal-body">
+                     <form>
+                         <div class="form-row">
+                             <div class="form-group col-sm-4">
+                                 <input class="form-control" type="text" name="username" id="modal-username"
+                                     placeholder="Username">
+
+                             </div>
+                             <div class="form-group col-sm-4">
+                                 <input class="form-control type=" password" name="password" id="modal-password"
+                                     placeholder="Password">
+                             </div>
+                             <div class="col-sm-auto form-group">
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="checkbox" name="remeberMe" id="remeberMe">
+                                     <label class="form-check-label" for="remeberMe">Remember Me</label>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-row">
+                             <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">
+                                Cancel
+                             </button>
+                             <button type="submit" class="btn btn-primary btn-sm ml-1" >Login</button>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
      </div>
 
 
@@ -56,9 +99,10 @@
                      <img src="img/logo.png" alt="Logo" class="img-fluid">
                  </div>
                  <div class="col-6 col-sm-3 align-self-center">
-                    <div class="row "><a href="#reserve" class="btn btn-info col-md-10 col-sm offset-md-1 width="30px" data-toggle="tooltip" data-html="true" title="Or call us at
+                     <div class="row "><a href="#reserve" class="btn btn-info col-md-10 col-sm offset-md-1 width=" 30px"
+                             data-toggle="tooltip" data-html="true" title="Or call us at
                         <br><strong>91+ 7003534915</strong>" data-placement="bottom">Reserve Table</a></div>
-                </div>
+                 </div>
              </div>
          </div>
      </header>
@@ -72,7 +116,8 @@
                  <div class="media">
                      <img src="img/uthappizza.png" alt="Uthappizza" class="d-flex img-thumbnail img-fluid mr-3">
                      <div class="media-body">
-                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-secondary badge-pill">Rs 400</span></h2>
+                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span
+                                 class="badge badge-secondary badge-pill">Rs 400</span></h2>
                          <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian
                              pizza, topped with Cerignola
                              olives,
@@ -113,8 +158,8 @@
              </div>
              <div class="col col-sm col-md order-sm-first">
                  <div class="media">
-                    <img src="img/alberto.png" alt="Alberto Somayya"
-                    class="d-flex img-thumbnail img-fluid mr-3 align-items-center">
+                     <img src="img/alberto.png" alt="Alberto Somayya"
+                         class="d-flex img-thumbnail img-fluid mr-3 align-items-center">
                      <div class="media-body">
                          <h2 class="mt-0">Alberto Somayya</h2>
                          <h4>Executive Chef</h4>
@@ -133,54 +178,54 @@
              <div class="col-md-10">
                  <div class="card">
                      <div class="card-header bg-warning text-white">
-                        <h3>Reserve a Table</h3>
+                         <h3>Reserve a Table</h3>
                      </div>
                      <div class="card-body">
-                         <form >
-                            <div class="row form-group align-items-center justify-content-center">
-                                <label for="noOfPeople" class="col-md-3 col-12 col-form-label">Number of Guests</label>
-                                <div class="col-md-7 ">
-                                    <span class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="noOfPeople" id="1">
-                                        <label class="form-check-label col-form-label" for="1">1</label>
-                                    </span>
-                                    <span class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="noOfPeople" id="1">
-                                        <label class="form-check-label col-form-label" for="2">2</label>
-                                    </span>
-                                    <span class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="noOfPeople" id="1">
-                                        <label class="form-check-label col-form-label" for="3">3</label>
-                                    </span>
-                                    <span class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="noOfPeople" id="1">
-                                        <label class="form-check-label col-form-label" for="4">4</label>
-                                    </span>
-                                    <span class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="noOfPeople" id="1">
-                                        <label class="form-check-label col-form-label" for="5">5</label>
-                                    </span>
-                                    <span class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="noOfPeople" id="1">
-                                        <label class="form-check-label col-form-label" for="6">6</label>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row form-group ">
-                                <label for="date" class="col-12 col-md-3 offset-md-1">Date & Time</label>
-                                <div class="col-12 col-md-4 mb-2">
-                                    <input class="form-control" type="text" name="date" id="date" placeholder="Date">
-                                </div>
-                                <div class="col md-3 ">
-                                    <input class="form-control" type="text" name="time" id="date" placeholder="Time">
-                                </div>
-                            </div>
+                         <form>
+                             <div class="row form-group align-items-center justify-content-center">
+                                 <label for="noOfPeople" class="col-md-3 col-12 col-form-label">Number of Guests</label>
+                                 <div class="col-md-7 ">
+                                     <span class="form-check form-check-inline">
+                                         <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                         <label class="form-check-label col-form-label" for="1">1</label>
+                                     </span>
+                                     <span class="form-check form-check-inline">
+                                         <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                         <label class="form-check-label col-form-label" for="2">2</label>
+                                     </span>
+                                     <span class="form-check form-check-inline">
+                                         <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                         <label class="form-check-label col-form-label" for="3">3</label>
+                                     </span>
+                                     <span class="form-check form-check-inline">
+                                         <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                         <label class="form-check-label col-form-label" for="4">4</label>
+                                     </span>
+                                     <span class="form-check form-check-inline">
+                                         <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                         <label class="form-check-label col-form-label" for="5">5</label>
+                                     </span>
+                                     <span class="form-check form-check-inline">
+                                         <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                         <label class="form-check-label col-form-label" for="6">6</label>
+                                     </span>
+                                 </div>
+                             </div>
+                             <div class="row form-group ">
+                                 <label for="date" class="col-12 col-md-3 offset-md-1">Date & Time</label>
+                                 <div class="col-12 col-md-4 mb-2">
+                                     <input class="form-control" type="text" name="date" id="date" placeholder="Date">
+                                 </div>
+                                 <div class="col md-3 ">
+                                     <input class="form-control" type="text" name="time" id="date" placeholder="Time">
+                                 </div>
+                             </div>
 
-                            <div class="row">
-                                <div class="col-md-3 offset-md-4">
-                                    <button class="btn btn-success" type="submit">Reserve</button>
-                                </div>
-                            </div>
+                             <div class="row">
+                                 <div class="col-md-3 offset-md-4">
+                                     <button class="btn btn-success" type="submit">Reserve</button>
+                                 </div>
+                             </div>
                          </form>
                      </div>
                  </div>
@@ -241,7 +286,7 @@
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
      <script>
-         $(document).ready(function(){
+         $(document).ready(function () {
              $('[data-toggle="tooltip').tooltip();
          });
      </script>
