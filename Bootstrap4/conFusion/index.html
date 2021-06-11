@@ -10,7 +10,7 @@
 
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-     
+
      <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
      <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
      <link rel="stylesheet" href="css/style.css">
@@ -87,7 +87,77 @@
          </div>
      </div>
 
+     <div class="modal" id="reserve" tabindex="-1">
+         <div class="modal-dialog modal-lg">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h4 class="modal-title"><strong>Reservation</strong></h4>
+                     <button class="close" data-dismiss="modal">&times</button>
+                 </div>
+                 <div class="modal-body">
+                     <form>
+                         <div class="row form-group align-items-center justify-content-center">
+                             <label for="noOfPeople" class="col-md-3 col-12 col-form-label">Number of Guests</label>
+                             <div class="col-md-7 ">
+                                 <span class="form-check form-check-inline">
+                                     <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                     <label class="form-check-label col-form-label" for="1">1</label>
+                                 </span>
+                                 <span class="form-check form-check-inline">
+                                     <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                     <label class="form-check-label col-form-label" for="2">2</label>
+                                 </span>
+                                 <span class="form-check form-check-inline">
+                                     <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                     <label class="form-check-label col-form-label" for="3">3</label>
+                                 </span>
+                                 <span class="form-check form-check-inline">
+                                     <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                     <label class="form-check-label col-form-label" for="4">4</label>
+                                 </span>
+                                 <span class="form-check form-check-inline">
+                                     <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                     <label class="form-check-label col-form-label" for="5">5</label>
+                                 </span>
+                                 <span class="form-check form-check-inline">
+                                     <input class="form-check-input" type="radio" name="noOfPeople" id="1">
+                                     <label class="form-check-label col-form-label" for="6">6</label>
+                                 </span>
+                             </div>
+                         </div>
 
+                         <div class="row form-group">
+                             <label for="" class="col-12 col-md-2 offset-md-1">Section</label>
+                             <div class="col-md-7 btn-group btn-group-toggle offset-md-1" data-toggle="buttons">
+                                 <label for="section" class="btn btn-danger">Smoking
+                                     <input type="radio" name="section" id="#smoking">
+                                 </label>
+                                 <label for="section" class="btn btn-secondary active" checked>Non-Smoking
+                                     <input type="radio" name="section" id="#nonSmoking">
+                                 </label>
+                             </div>
+                         </div>
+
+                         <div class="row form-group ">
+                             <label for="date" class="col-12 col-md-3 offset-md-1">Date & Time</label>
+                             <div class="col-12 col-md-4 mb-2">
+                                 <input class="form-control" type="text" name="date" id="date" placeholder="Date">
+                             </div>
+                             <div class="col md-3 ">
+                                 <input class="form-control" type="text" name="time" id="date" placeholder="Time">
+                             </div>
+                         </div>
+                         <div class="row">
+                             <div class="col-md-3 offset-md-4">
+                                 <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                 <button class="btn btn-success" type="submit">Reserve</button>
+                             </div>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
      <header class="jumbotron">
          <div class="container">
              <div class="row row-header">
@@ -101,8 +171,7 @@
                  </div>
                  <div class="col-6 col-sm-3 align-self-center">
                      <div class="row "><a href="#reserve" class="btn btn-info col-md-10 col-sm offset-md-1 width=" 30px"
-                             data-toggle="tooltip" data-html="true" title="Or call us at
-                        <br><strong>91+ 7003534915</strong>" data-placement="bottom">Reserve Table</a></div>
+                             data-toggle="modal" data-target="#reserve">Reserve Table</a></div>
                  </div>
              </div>
          </div>
@@ -154,14 +223,14 @@
                          </div>
                      </div>
                      <ol class="carousel-indicators">
-                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#mycarousel" data-slide-to="1" ></li>
-                        <li data-target="#mycarousel" data-slide-to="2" ></li>
+                         <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                         <li data-target="#mycarousel" data-slide-to="1"></li>
+                         <li data-target="#mycarousel" data-slide-to="2"></li>
                      </ol>
-                     <a href="#mycarousel" class="carousel-control-prev"  data-slide="prev" data-target="#mycarousel">
+                     <a href="#mycarousel" class="carousel-control-prev" data-slide="prev" data-target="#mycarousel">
                          <span class="carousel-control-prev-icon"></span>
                      </a>
-                     <a href="#mycarousel" class="carousel-control-next"  data-slide="next" data-target="#mycarousel">
+                     <a href="#mycarousel" class="carousel-control-next" data-slide="next" data-target="#mycarousel">
                          <span class="carousel-control-next-icon"></span>
                      </a>
                  </div>
@@ -344,11 +413,11 @@
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-     <script>
+     <!-- <script>
          $(document).ready(function () {
              $('[data-toggle="tooltip').tooltip();
          });
-     </script>
+     </script> -->
  </body>
 
  </html>
