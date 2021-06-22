@@ -50,3 +50,14 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px; }
+
+.modal-header {
+  background-color: #876c52; }
+  .modal-header .close {
+    color: red; }
+
+.modal-body {
+  background-color: bisque; }
+
+.modal-content {
+  padding: 0px; }
